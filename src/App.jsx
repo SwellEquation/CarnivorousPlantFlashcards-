@@ -78,8 +78,12 @@ function App() {
   const [flipped, setFlipped] = useState(false)
 
   const nextCard = () => {
-    setIndex((index + 1) % cards.length)
-    setFlipped(false)
+    let randomIndex
+  do {
+    randomIndex = Math.floor(Math.random() * cards.length)
+  } while (randomIndex === index)
+  setIndex(randomIndex)
+  setFlipped(false)
   }
 
   const prevCard = () => {
