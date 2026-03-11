@@ -15,7 +15,7 @@ const cards = [
   {
     question: "What do temperate carnivorous plants such as American Pitchers and Flytraps do during the winter months?",
     answer: "They go into Winter dormancy",
-    color: "#A8D8EA"
+    color: "#F7E27D"
   },
   {
     question: "What is the purpose of the lid that is on American pitcher plants and Nepenthes pitchers?",
@@ -25,32 +25,32 @@ const cards = [
   {
     question: "What do Flytrap seeds look like?",
     answer: "Black teardrops",
-    color: "#D7BDE2"
+    color: "#BDE5A8"
   },
   {
     question: "Do Nepenthes pitchers produce their own carnivorous fluid?",
     answer: "Yes, each pitcher on a healthy plant is 1/4 filled with fluid",
-    color: "#FAD7A0"
+    color: "#BDE5A8"
   },
   {
     question: "Why did plants evolve to be carnivorous?",
     answer: "To make up for the lack of nutrients in their soil",
-    color: "#AED6F1"
+    color: "#F5B7B1"
   },
   {
     question: "Where does a Flytrap store all of its energy?",
     answer: "The rhizome",
-    color: "#ABEBC6"
+    color: "#F7E27D"
   },
   {
     question: "Do all carnivorous pitcher plants produce their own fluid?",
     answer: "No, some species such as the Sarracenia Purpurea or Heliamphora get almost all of their fluid from rainfall",
-    color: "#F9E79F"
+    color: "#F7E27D"
   },
   {
     question: "What carnivorous plant ancestor did the Venus Flytrap evolve from?",
     answer: "The sundew",
-    color: "#82E0AA"
+    color: "#F5B7B1"
   }
 ]
 
