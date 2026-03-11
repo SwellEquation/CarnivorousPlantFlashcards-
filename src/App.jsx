@@ -3,53 +3,53 @@ import "./App.css"
 
 const cards = [
   {
-    question: "If a plant develops yellow spots in the middle of leaves, what could cause it?",
-    answer: "Overwatering or fungal infection.",
+    question: "What nutritious chemical do carnivorous plants get from their prey?",
+    answer: "Nitrogen",
     color: "#F7E27D"
   },
   {
-    question: "What process do plants use to convert sunlight into energy?",
-    answer: "Photosynthesis.",
+    question: "What is a carnivorous plants main source of energy?",
+    answer: "Photosynthesis",
     color: "#BDE5A8"
   },
   {
-    question: "Which part of the plant absorbs water and nutrients?",
-    answer: "Roots.",
+    question: "What do temperate carnivorous plants such as American Pitchers and Flytraps do during the winter months?",
+    answer: "They go into Winter dormancy",
     color: "#A8D8EA"
   },
   {
-    question: "What gas do plants absorb from the air?",
-    answer: "Carbon dioxide.",
+    question: "What is the purpose of the lid that is on American pitcher plants and Nepenthes pitchers?",
+    answer: "To keep rainwater out",
     color: "#F5B7B1"
   },
   {
-    question: "Which plant structure makes seeds?",
-    answer: "Flowers.",
+    question: "What do Flytrap seeds look like?",
+    answer: "Black teardrops",
     color: "#D7BDE2"
   },
   {
-    question: "Why do plant leaves turn yellow?",
-    answer: "Often due to nutrient deficiency or too much water.",
+    question: "Do Nepenthes pitchers produce their own carnivorous fluid?",
+    answer: "Yes, each pitcher on a healthy plant is 1/4 filled with fluid",
     color: "#FAD7A0"
   },
   {
-    question: "What nutrient helps plants grow strong stems?",
-    answer: "Nitrogen.",
+    question: "Why did plants evolve to be carnivorous?",
+    answer: "To make up for the lack of nutrients in their soil",
     color: "#AED6F1"
   },
   {
-    question: "What is the waxy coating on leaves called?",
-    answer: "The cuticle.",
+    question: "Where does a Flytrap store all of its energy?",
+    answer: "The rhizome",
     color: "#ABEBC6"
   },
   {
-    question: "What part of a plant transports water upward?",
-    answer: "Xylem.",
+    question: "Do all carnivorous pitcher plants produce their own fluid?",
+    answer: "No, some species such as the Sarracenia Purpurea or Heliamphora get almost all of their fluid from rainfall",
     color: "#F9E79F"
   },
   {
-    question: "What pigment makes plants green?",
-    answer: "Chlorophyll.",
+    question: "What carnivorous plant ancestor did the Venus Flytrap evolve from?",
+    answer: "The sundew",
     color: "#82E0AA"
   }
 ]
@@ -78,12 +78,8 @@ function App() {
   const [flipped, setFlipped] = useState(false)
 
   const nextCard = () => {
-    let randomIndex
-  do {
-    randomIndex = Math.floor(Math.random() * cards.length)
-  } while (randomIndex === index)
-  setIndex(randomIndex)
-  setFlipped(false)
+    setIndex((index + 1) % cards.length)
+    setFlipped(false)
   }
 
   const prevCard = () => {
@@ -109,12 +105,10 @@ function App() {
         index={index}
         total={cards.length}
       />
-
       <div className="arrow-container">
         <button className="arrow" onClick={prevCard}>←</button>
         <button className="arrow" onClick={nextCard}>→</button>
       </div>
-
     </div>
   )
 }
