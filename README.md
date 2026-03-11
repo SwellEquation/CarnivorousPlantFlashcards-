@@ -4,7 +4,7 @@ Submitted by: **Fabian**
 
 This web app serves as a flashcard based quiz based on carnivorous plants.
 
-Time spent: **3** hours spent in total
+Time spent: **3** hours
 
 ## Required Features
 
