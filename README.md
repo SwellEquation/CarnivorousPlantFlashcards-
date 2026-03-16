@@ -4,7 +4,7 @@ Submitted by: **Fabian**
 
 This web app serves as a flashcard based quiz based on carnivorous plants.
 
-Time spent: **3** hours spent in total
+Time spent: **3** hours
 
 ## Required Features
 
@@ -35,7 +35,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-![Walkthrough](https://i.imgur.com/Mr2Zwhy.gifv)
+![Walkthrough](https://github.com/SwellEquation/CarnivorousPlantFlashcards/blob/main/WalkthroughGif.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with https://www.freeconvert.com
